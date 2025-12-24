@@ -74,9 +74,9 @@ const About: React.FC = () => {
               1
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Get Your Cookie</h3>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Get Your Api Token</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Log into your TeraBox account and copy the 'ndus' cookie from your browser's developer tools.
+                Log into your admin platfrom in our anti-bypass bot.
               </p>
             </div>
           </div>
@@ -86,9 +86,9 @@ const About: React.FC = () => {
               2
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Configure Cookie</h3>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Configure Token</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Enter your cookie in our secure form. It's stored locally in your browser and never sent to our servers.
+                Enter your Token in our secure form. It's stored locally in your browser and never sent to our servers.
               </p>
             </div>
           </div>
@@ -100,7 +100,7 @@ const About: React.FC = () => {
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Paste TeraBox URL</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Copy any TeraBox share link and paste it into our download form.
+                Copy any link you want to shorten and paste it into our shortening form.
               </p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const About: React.FC = () => {
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Download</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Get instant access to direct download links with file previews and detailed information.
+                Get instant direct shortened links of your shortening service integrated with anti-bypass.
               </p>
             </div>
           </div>
@@ -126,16 +126,16 @@ const About: React.FC = () => {
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Made with Love</h2>
         </div>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
-          This project is developed and maintained by the Ashlynn Repository.
+          This project is developed and maintained by Obsidian Bots.
         </p>
         <a
-          href="https://t.me/Ashlynn_Repository"
+          href="https://t.me/Obsidian_Bots"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
         >
           <ExternalLink className="h-5 w-5" />
-          <span>Visit Ashlynn Repository</span>
+          <span>Visit Obsidian Bots</span>
         </a>
       </div>
     </div>
