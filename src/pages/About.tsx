@@ -3,131 +3,98 @@ import { Download, Shield, Zap, Globe, ExternalLink, Heart } from 'lucide-react'
 
 const About: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-7xl mx-auto px-4 md:px-6 pt-16">
+      
       {/* Hero Section */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-14 max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          About <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Anti-bypass Tool</span>
+          About{" "}
+          <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+            Anti-bypass Tool
+          </span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 px-4">
+        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
           A secure anti-bypass platform built to protect links, revenue, and traffic integrity
         </p>
       </div>
 
       {/* Features Grid */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
-              <Zap className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Lightning Fast</h3>
-          </div>
-          <p className="text-gray-600 dark:text-gray-300">
-            Optimized verification flow with minimal delay. Users are verified instantly without affecting user experience.
-          </p>
-        </div>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
+        <Feature
+          icon={<Zap className="h-6 w-6 text-blue-600 dark:text-blue-400" />}
+          title="Lightning Fast"
+          desc="Optimized verification with minimal delay, ensuring a smooth experience for legitimate users."
+          bg="blue"
+        />
 
-        <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="p-2 bg-green-100 dark:bg-green-900 rounded-lg">
-              <Shield className="h-6 w-6 text-green-600 dark:text-green-400" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Advanced Anti-Bypass</h3>
-          </div>
-          <p className="text-gray-600 dark:text-gray-300">
-            Blocks bots, direct access, script-based bypass attempts, and unauthorized users using smart checks.
-          </p>
-        </div>
+        <Feature
+          icon={<Shield className="h-6 w-6 text-green-600 dark:text-green-400" />}
+          title="Advanced Anti-Bypass"
+          desc="Protects against abuse, automation, and unauthorized access using intelligent safeguards."
+          bg="green"
+        />
 
-        <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
-              <Download className="h-6 w-6 text-purple-600 dark:text-purple-400" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Access Control</h3>
-          </div>
-          <p className="text-gray-600 dark:text-gray-300">
-            Built-in protection layers regulate access automatically, ensuring secure and controlled link usage at all times
-          </p>
-        </div>
+        <Feature
+          icon={<Download className="h-6 w-6 text-purple-600 dark:text-purple-400" />}
+          title="Access Control"
+          desc="Built-in protection layers regulate access automatically for secure and controlled usage."
+          bg="purple"
+        />
 
-        <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="p-2 bg-orange-100 dark:bg-orange-900 rounded-lg">
-              <Globe className="h-6 w-6 text-orange-600 dark:text-orange-400" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Cross-Platform</h3>
-          </div>
-          <p className="text-gray-600 dark:text-gray-300">
-            Works on all devices and browsers. Responsive design ensures optimal experience on desktop, tablet, and mobile.
-          </p>
-        </div>
+        <Feature
+          icon={<Globe className="h-6 w-6 text-orange-600 dark:text-orange-400" />}
+          title="Cross-Platform"
+          desc="Works seamlessly across browsers, apps, mobile devices, and desktops."
+          bg="orange"
+        />
       </div>
 
       {/* How it Works */}
-      <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 dark:border-gray-700 mb-12">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">How It Works</h2>
-        <div className="space-y-6">
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-              1
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Get Your Api Token</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Log into your admin platfrom in our anti-bypass bot.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-              2
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Configure Token</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Enter your Token in our secure form. It's stored locally in your browser and only sent to our servers for verification.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-              3
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Paste Your URL</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Copy any link you want to shorten and paste it into our shortening form.
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-semibold">
-              4
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Get your Link</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Get instant direct shortened links of your shortening service integrated with anti-bypass.
-              </p>
-            </div>
-          </div>
+      <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200 dark:border-gray-700 mb-14 max-w-6xl mx-auto">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+          How It Works
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          <Step
+            num="1"
+            title="Get Your API Token"
+            desc="Access your dashboard to generate a secure token for your integration."
+          />
+
+          <Step
+            num="2"
+            title="Configure Token"
+            desc="Securely configure your token to enable protected link processing."
+          />
+
+          <Step
+            num="3"
+            title="Paste Your URL"
+            desc="Submit any link you want to protect using the system."
+          />
+
+          <Step
+            num="4"
+            title="Get Your Link"
+            desc="Receive a protected link secured with advanced anti-bypass layers."
+          />
         </div>
       </div>
 
       {/* Credits */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border border-blue-200 dark:border-blue-800 text-center">
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border border-blue-200 dark:border-blue-800 text-center max-w-4xl mx-auto">
         <div className="flex items-center justify-center space-x-2 mb-4">
           <Heart className="h-6 w-6 text-red-500" />
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Made with Love</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            Built with Care
+          </h2>
         </div>
+
         <p className="text-gray-600 dark:text-gray-300 mb-4">
-          This project is developed and maintained by Obsidian Bots.
+          Developed and maintained by Obsidian Bots.
         </p>
+
         <a
           href="https://t.me/Obsidian_Bots"
           target="_blank"
@@ -141,5 +108,34 @@ const About: React.FC = () => {
     </div>
   );
 };
+
+/* Helper Components */
+
+const Feature = ({ icon, title, desc, bg }: any) => (
+  <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
+    <div className="flex items-center space-x-3 mb-4">
+      <div className={`p-2 bg-${bg}-100 dark:bg-${bg}-900 rounded-lg`}>
+        {icon}
+      </div>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+        {title}
+      </h3>
+    </div>
+    <p className="text-gray-600 dark:text-gray-300">{desc}</p>
+);
+
+const Step = ({ num, title, desc }: any) => (
+  <div className="flex items-start space-x-4">
+    <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold">
+      {num}
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+        {title}
+      </h3>
+      <p className="text-gray-600 dark:text-gray-300">{desc}</p>
+    </div>
+  </div>
+);
 
 export default About;
