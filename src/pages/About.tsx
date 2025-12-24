@@ -88,7 +88,7 @@ const About: React.FC = () => {
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Configure Token</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Enter your Token in our secure form. It's stored locally in your browser and never sent to our servers.
+                Enter your Token in our secure form. It's stored locally in your browser and only sent to our servers for verification.
               </p>
             </div>
           </div>
@@ -98,7 +98,7 @@ const About: React.FC = () => {
               3
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Paste TeraBox URL</h3>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Paste Your URL</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Copy any link you want to shorten and paste it into our shortening form.
               </p>
@@ -110,7 +110,7 @@ const About: React.FC = () => {
               4
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Download</h3>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Get your Link</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Get instant direct shortened links of your shortening service integrated with anti-bypass.
               </p>
