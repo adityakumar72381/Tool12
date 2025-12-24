@@ -3,7 +3,7 @@ import { Download, Shield, Zap, Globe, ExternalLink, Heart } from 'lucide-react'
 
 const About: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-6 pt-16">
+    <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-14 pt-24">
       
       {/* Hero Section */}
       <div className="text-center mb-14 max-w-4xl mx-auto">
