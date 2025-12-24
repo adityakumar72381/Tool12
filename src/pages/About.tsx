@@ -4,7 +4,7 @@ import { Download, Shield, Zap, Globe, ExternalLink, Heart } from 'lucide-react'
 const About: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-14 pt-24">
-      
+
       {/* Hero Section */}
       <div className="text-center mb-14 max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -24,28 +24,28 @@ const About: React.FC = () => {
           icon={<Zap className="h-6 w-6 text-blue-600 dark:text-blue-400" />}
           title="Lightning Fast"
           desc="Optimized verification with minimal delay, ensuring a smooth experience for legitimate users."
-          bg="blue"
+          color="blue"
         />
 
         <Feature
           icon={<Shield className="h-6 w-6 text-green-600 dark:text-green-400" />}
           title="Advanced Anti-Bypass"
           desc="Protects against abuse, automation, and unauthorized access using intelligent safeguards."
-          bg="green"
+          color="green"
         />
 
         <Feature
           icon={<Download className="h-6 w-6 text-purple-600 dark:text-purple-400" />}
           title="Access Control"
           desc="Built-in protection layers regulate access automatically for secure and controlled usage."
-          bg="purple"
+          color="purple"
         />
 
         <Feature
           icon={<Globe className="h-6 w-6 text-orange-600 dark:text-orange-400" />}
           title="Cross-Platform"
           desc="Works seamlessly across browsers, apps, mobile devices, and desktops."
-          bg="orange"
+          color="orange"
         />
       </div>
 
@@ -61,19 +61,16 @@ const About: React.FC = () => {
             title="Get Your API Token"
             desc="Access your dashboard to generate a secure token for your integration."
           />
-
           <Step
             num="2"
             title="Configure Token"
             desc="Securely configure your token to enable protected link processing."
           />
-
           <Step
             num="3"
             title="Paste Your URL"
             desc="Submit any link you want to protect using the system."
           />
-
           <Step
             num="4"
             title="Get Your Link"
@@ -109,12 +106,19 @@ const About: React.FC = () => {
   );
 };
 
-/* Helper Components */
+/* ---------- Helpers ---------- */
 
-const Feature = ({ icon, title, desc, bg }: any) => (
+const colorMap: Record<string, string> = {
+  blue: "bg-blue-100 dark:bg-blue-900",
+  green: "bg-green-100 dark:bg-green-900",
+  purple: "bg-purple-100 dark:bg-purple-900",
+  orange: "bg-orange-100 dark:bg-orange-900",
+};
+
+const Feature = ({ icon, title, desc, color }: any) => (
   <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
     <div className="flex items-center space-x-3 mb-4">
-      <div className={`p-2 bg-${bg}-100 dark:bg-${bg}-900 rounded-lg`}>
+      <div className={`p-2 rounded-lg ${colorMap[color]}`}>
         {icon}
       </div>
       <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -122,6 +126,7 @@ const Feature = ({ icon, title, desc, bg }: any) => (
       </h3>
     </div>
     <p className="text-gray-600 dark:text-gray-300">{desc}</p>
+  </div>
 );
 
 const Step = ({ num, title, desc }: any) => (
