@@ -7,10 +7,10 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          About <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">TeraBox Downloader</span>
+          About <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Anti-bypass Tool</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 px-4">
-          A professional, secure, and efficient way to download files from TeraBox
+          A secure anti-bypass platform built to protect links, revenue, and traffic integrity
         </p>
       </div>
 
@@ -21,10 +21,10 @@ const About: React.FC = () => {
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-lg">
               <Zap className="h-6 w-6 text-blue-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Fast Downloads</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Lightning Fast</h3>
           </div>
           <p className="text-gray-600 dark:text-gray-300">
-            Get direct download links instantly without waiting or speed limits. Our optimized servers ensure maximum download speeds.
+            Optimized verification flow with minimal delay. Users are verified instantly without affecting user experience.
           </p>
         </div>
 
@@ -33,10 +33,10 @@ const About: React.FC = () => {
             <div className="p-2 bg-green-100 dark:bg-green-900 rounded-lg">
               <Shield className="h-6 w-6 text-green-600 dark:text-green-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Secure & Private</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Advanced Anti-Bypass</h3>
           </div>
           <p className="text-gray-600 dark:text-gray-300">
-            Your cookies and data are stored locally in your browser. We don't store any personal information on our servers.
+            Blocks bots, direct access, script-based bypass attempts, and unauthorized users using smart checks.
           </p>
         </div>
 
@@ -45,10 +45,10 @@ const About: React.FC = () => {
             <div className="p-2 bg-purple-100 dark:bg-purple-900 rounded-lg">
               <Download className="h-6 w-6 text-purple-600 dark:text-purple-400" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">No Limits</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Access Control</h3>
           </div>
           <p className="text-gray-600 dark:text-gray-300">
-            Download files of any size without restrictions. Support for resumable downloads and range requests.
+            Built-in protection layers regulate access automatically, ensuring secure and controlled link usage at all times
           </p>
         </div>
 
